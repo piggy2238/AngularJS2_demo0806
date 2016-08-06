@@ -13,4 +13,12 @@ import { HeaderComponent } from './header';
 //輸出class
 export class AppComponent {
   title = 'app works!';
+
+  text = "您並未輸入任何東西";
+
+  show(evet){
+        console.log(event)
+        this.text = document.getElementById("qtext").getAttribute("value");
+
+  }
 }
