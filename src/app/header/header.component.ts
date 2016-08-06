@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   pageTitle = '!The Will Will Web!';
   pageH3 = '0806 AngularJS DEMO';
   pageTitleLink = 'http://blog.miniasp.com/';
+  pageIcon1Lick = 'https://www.facebook.com/will.fans';
   constructor() { }
 
   ngOnInit() {

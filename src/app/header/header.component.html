@@ -25,13 +25,14 @@
       </div>
       <div class="title-wrapper">
         <div class="container">
-          <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web">
+          <img src="/assets/images/logo.png" class="pull-left logo" [title]="pageTitle">
           <hgroup class="pull-left">
             <h1><a [href]="pageTitleLink">{{pageTitle}}</a></h1>
+            <!--[屬性要加什麼都可以]一秒變動態-->
             <h3>{{pageH3}}</h3>
           </hgroup>
           <div id="social-icons" class="pull-right social-icon">
-            <a href="https://www.facebook.com/will.fans" title="Will 保哥的技術交流中心" target="_blank">
+            <a [href]="pageIcon1Lick" title="Will 保哥的技術交流中心" target="_blank">
               <img src="/assets/images/facebook.png">
             </a>
             <a href="https://twitter.com/Will_Huang" title="@Will_Huang 保哥的推特" target="_blank">
