@@ -14,22 +14,11 @@ import { HeaderComponent } from './header';
 export class AppComponent {
   title = 'app works!';
 
-  textInput = "您並未輸入任何東西";
+  textInput:string ;
 
-  doSearch(evet: KeyboardEvent){
-
-        //1.event.target 就是input的DOM
-        //因event target的檔案類別能用的東西很少,所以要轉型
-         var input = evet.target as HTMLInputElement;
-         console.log(input.value);//確認資料有抓到也可以輸出
-         console.log(event);
-         //現在要確定按enter才會輸出
-         //用enter的unitcode去設定
+  doSearch(evet:KeyboardEvent,  input:HTMLInputElement){
           if(event.keyCode == 13){
               this.textInput = input.value;
-
           }
-
-
   }
 }

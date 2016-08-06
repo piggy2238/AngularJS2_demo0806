@@ -76,9 +76,14 @@
               <div class="widget-content">
                   <div id="searchbox">
                     <label for="txt-fb38ecdd-5813-4d10-8c5f-8d901c7c731e" style="display:none">Search</label>
-				<!--雙向綁定 上方輸入什麼下面馬上顯示           -->
-        	<input (keyup)="doSearch($event)"
-          [(ngModel)]="textInput"
+				<!--雙向綁定 上方輸入什麼下面馬上顯示 [(ngModel)]="textInput"-->
+        <!--其實是用兩個單項組成的 (ngModelChange)="textInput=$event"-->
+        <!--使用範本變數 #keywordInput 代表此DOM的物件-->
+        	<input
+
+          #keywordInput
+          (keyup)="doSearch($event, keywordInput)"
+
           type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" id="qtext" value><input  type="button" value="搜尋" id="searchbutton">
                   </div>
                   {{textInput}}
