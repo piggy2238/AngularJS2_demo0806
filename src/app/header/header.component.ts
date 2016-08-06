@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   pageTitle = '!The Will Will Web!';
-  pageH3 = '0806 AngularJS DEMO';
+  pageH3 = '記載著<strong>will</strong>保哥的學習過程';
   pageTitleLink = 'http://blog.miniasp.com/';
   pageIcon1Lick = 'https://www.facebook.com/will.fans';
   constructor() { }

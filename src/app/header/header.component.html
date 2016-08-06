@@ -29,7 +29,9 @@
           <hgroup class="pull-left">
             <h1><a [href]="pageTitleLink">{{pageTitle}}</a></h1>
             <!--[屬性要加什麼都可以]一秒變動態-->
-            <h3>{{pageH3}}</h3>
+            <!--<h3>{{pageH3}}</h3>-->
+            <h3 [innerHTML]="pageH3"></h3>
+            <!--在HTML的tag可以利用屬性繫結[innerHTML]結合內嵌繫結把他放進去-->
           </hgroup>
           <div id="social-icons" class="pull-right social-icon">
             <a [href]="pageIcon1Lick" title="Will 保哥的技術交流中心" target="_blank">
