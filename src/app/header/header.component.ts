@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: '.app-header',
@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   pageTitle = '!The Will Will Web!';
-  pageH3 = '記載著<strong>will</strong>保哥的學習過程';
+  //要有一個屬性去接可以去接外部傳入的資料
+  @Input()
+    pageH3:string;
+
+
+
   pageTitleLink = 'http://blog.miniasp.com/';
   pageIcon1Lick = 'https://www.facebook.com/will.fans';
 

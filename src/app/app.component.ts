@@ -15,6 +15,7 @@ export class AppComponent {
   title = 'app works!';
 
   textInput:string ;
+  pageSubtitle = '記載著<strong>will</strong>保哥的學習過程';
 
 //範本變數的方法 要多一個input的變數
   doSearch(evet:KeyboardEvent, input:HTMLInputElement){
