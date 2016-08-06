@@ -1,4 +1,5 @@
 /* tslint:disable:no-unused-variable */
+// 單元測試 還不會寫可以移掉
 
 import { addProviders, async, inject } from '@angular/core/testing';
 import { AppComponent } from './app.component';
