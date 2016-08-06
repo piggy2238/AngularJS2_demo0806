@@ -16,9 +16,12 @@ export class AppComponent {
 
   textInput:string ;
 
-  doSearch(evet:KeyboardEvent,  input:HTMLInputElement){
-          if(event.keyCode == 13){
+//雙向綁定II
+  doSearch(evet:KeyboardEvent){
+     var input = event.target as HTMLInputElement;
+         if(event.keyCode == 13){
               this.textInput = input.value;
           }
   }
+
 }
