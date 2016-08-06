@@ -28,8 +28,11 @@
           <img src="/assets/images/logo.png" class="pull-left logo" [title]="pageTitle">
           <hgroup class="pull-left">
             <h1><a [href]="pageTitleLink">{{pageTitle}}</a></h1>
-            <h3 (click)="plus($event)" [innerHTML]="pageH3" [ngClass]="{blue: num%2 == 1,red: num%2==0}"></h3>
-            <!--利用ngclass 讓屬性動態改變,進而改變其外觀"className1: 條件成立,className2: 條件成立,...."-->
+            <h3 (click)="plus($event)" [innerHTML]="pageH3"
+            [class.blue] = "num%2==1"
+            [class.red] = "num%2==0"
+            ></h3>
+            <!--改用 [class.special]="isSpecial" 寫法-->
             +{{num}}
           </hgroup>
           <div id="social-icons" class="pull-right social-icon">
