@@ -1,0 +1,4 @@
+.blue{
+  color:blue!important;
+  /*用important蓋過預先設定值*/
+}
