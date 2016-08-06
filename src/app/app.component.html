@@ -1,6 +1,13 @@
 <!--將header拆出成另一個元件 導入點-->
 <!--元件型的directives-->
 <div class="app-header"></div>
+<!--SWITCH 的作法-->
+<!--當條件符合conditionExpression = expression 的時候 回傳output-->
+<div [ngSwitch]="conditionExpression">
+  <div *ngSwitchWhen="expression">output</div>
+  <div *ngSwitchDefault>output2</div>
+</div>
+
     <!-- CONTAINER START-->
     <section class="container">
       <div class="row">
