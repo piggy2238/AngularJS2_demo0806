@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header';
+import {ArticleComponent} from './article';
 
 //輸入class
 //裝飾器
@@ -7,7 +8,7 @@ import { HeaderComponent } from './header';
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives:[HeaderComponent]
+  directives:[HeaderComponent,ArticleComponent]
   // 使用directives 子元件
 })
 //輸出class
