@@ -24,6 +24,8 @@
   },
   "defaults": {
     "prefix": "app",
+    //預設的component的前面詞可改
+    //ex."prefix": "hime" 那麼預設產生的檔案皆會是hime.component<以此類推>
     "sourceDir": "src",
     "styleExt": "css",
     "prefixInterfaces": false,
