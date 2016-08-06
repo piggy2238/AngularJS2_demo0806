@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,16 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  keyword: string;
+
+  @Output()
+  search = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  //範本變數的方法 要多一個input的變數
-  doSearch(evet:KeyboardEvent, input:HTMLInputElement){
-         if(event.keyCode == 13){
-              this.textInput = input.value;
-          }
+  doSearch(event: KeyboardEvent, input: HTMLInputElement) {
+    // if(event.keyCode == 13) {
+      this.keyword = input.value;
+      this.search.emit(input.value);
+    // }
   }
 
 }
