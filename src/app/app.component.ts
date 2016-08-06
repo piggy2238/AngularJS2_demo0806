@@ -8,6 +8,7 @@ import { HeaderComponent } from './header';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
   directives:[HeaderComponent]
+  // 使用directives 子元件
 })
 //輸出class
 export class AppComponent {
