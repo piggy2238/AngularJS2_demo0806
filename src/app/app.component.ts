@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header';
-import {ArticleComponent} from './article';
+import { ArticleComponent } from './article';
+import { SearchComponent } from './search';
 
 //輸入class
 //裝飾器
@@ -8,7 +9,7 @@ import {ArticleComponent} from './article';
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives:[HeaderComponent,ArticleComponent]
+  directives:[HeaderComponent,ArticleComponent,SearchComponent]
   // 使用directives 子元件
 })
 //輸出class
@@ -18,12 +19,7 @@ export class AppComponent {
   textInput:string ;
   pageSubtitle = '記載著<strong>will</strong>保哥的學習過程';
 
-//範本變數的方法 要多一個input的變數
-  doSearch(evet:KeyboardEvent, input:HTMLInputElement){
-         if(event.keyCode == 13){
-              this.textInput = input.value;
-          }
-  }
+
 
   data =[
     {
