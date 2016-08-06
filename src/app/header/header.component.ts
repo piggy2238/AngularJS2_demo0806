@@ -20,10 +20,7 @@ export class HeaderComponent implements OnInit {
 
   plus(event: MouseEvent){
       console.log(event);//從這邊得到物件類別
-      //修改為必須要按著ctrl 才會加一
-      if (event.ctrlKey){
         this.num++;
-      }
   }
 
 }

@@ -1,12 +1,7 @@
 .blue{
   color:blue!important;
-  /*用important蓋過預先設定值*/
-  /*在套用的時候AngularJS 會自動增加這個元件的id,
-  確保在這裡使用的CSS設定只會套用在此元件中,
-  換言之,在此元件設定的CSS其他元件也不能用
-  避免元件間的干擾
-  如要整個調整,可以到首頁直接寫在HEAD裡面
-  一般較少如此做
-  */
-  border-bottom: 1px black solid;
+}
+
+.red{
+  color: red! important
 }

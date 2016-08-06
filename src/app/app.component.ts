@@ -16,9 +16,8 @@ export class AppComponent {
 
   textInput:string ;
 
-//雙向綁定II
-  doSearch(evet:KeyboardEvent){
-     var input = event.target as HTMLInputElement;
+//範本變數的方法 要多一個input的變數
+  doSearch(evet:KeyboardEvent, input:HTMLInputElement){
          if(event.keyCode == 13){
               this.textInput = input.value;
           }
