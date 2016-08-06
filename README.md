@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Demo0806
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.
@@ -29,3 +30,7 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# AngularJS2_demo0806
+AngularJS 2 Demo0806
+>>>>>>> 80f7a12a9adc7a264d63b0c144aa674a97087ac4
