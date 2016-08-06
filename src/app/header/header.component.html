@@ -32,10 +32,11 @@
             [class.blue] = "num%2==1"
             [class.red] = "num%2==0"
             ></h3>
-            <!--改用 [class.special]="isSpecial" 寫法-->
             +{{num}}
           </hgroup>
-          <div id="social-icons" class="pull-right social-icon">
+          <!--ngIf在工作的時候是改掉DOM的結構
+          實作目的:在按鈕為偶數的時候旁邊的ICON消失-->
+          <div *ngIf="num%2==1" id="social-icons" class="pull-right social-icon">
             <a [href]="pageIcon1Lick" title="Will 保哥的技術交流中心" target="_blank">
               <img src="/assets/images/facebook.png">
             </a>
